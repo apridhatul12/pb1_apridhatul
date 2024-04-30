@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping tpm 5</title>
+    <style>
+        #outputList {
+            list-style: none; /* Menghapus bullet */
+            padding-left: 0; /* Menghapus padding default pada elemen <ol> */
+        }
+    </style>
+</head>
+<body>
+    <label for="text">Input Text:</label>
+    <input type="text" id="textInput"><br>
+    <label for="number">Input Number:</label>
+    <input type="number" id="numberInput"><br>
+    <button onclick="cetak()">Cetak Pesan</button>
+    <ol id="outputList"></ol>
+
+    <script>
+        function cetak() {
+            const textInput = document.getElementById("textInput").value;
+            const numberInput = parseInt(document.getElementById("numberInput").value);
+            const outputList = document.getElementById("outputList");
+            
+            // Menghapus elemen <li> yang sudah ada sebelumnya
+            outputList.innerHTML = '';
+
+            // Menggunakan while loop
+            let i = 1;
+            while (i <= numberInput) {
+                const listItem = document.createElement("li");
+                listItem.textContent = i + ". " + textInput;
+                outputList.appendChild(listItem);
+                i++;
+            }
+
+            // Menggunakan for loop
+            // for (let i = 1; i <= numberInput; i++) {
+            //     const listItem = document.createElement("li");
+            //     listItem.textContent = i + ". " + textInput;
+            //     outputList.appendChild(listItem);
+            // }
+        }
+    </script>
+</body>
+</html>
