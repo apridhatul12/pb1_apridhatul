@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Vitae</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .photo {
+    margin-right: 20px;
+  }
+  .info {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    margin-top: 10px;
+  }
+  th, td{
+    padding:  8px;
+    text-align: left;
+
+  }
+  th:first-child, td:first-child{
+    padding-left: 500px;
+  }
+  .table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  form {
+  background-color: white;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+#detail{
+  margin-top: -150px;
+}
+form input[type="submit"] {
+  margin: 0;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">PRODUCT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">GALLERY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BLOG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">MY INVENTORY</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="photo">
+    <img src="hacktiv8.png" alt="Your Photo" width="150">
+    <div class="buttons">
+      <button class="btn btn-primary">Kontak</button>
+      <button class="btn btn-secondary">Resume</button>
+    </div>
+  </div>
+  <div class="info">
+    <h2>Apridhatul Laili</h2>
+    <p>Frontend Delevoper</p>
+  </div>
+</div>
+
+<div id="detail">
+  <table>
+      <tr>
+          <td>Availability</td>
+          <td>Full Time</td>
+      </tr>
+      <tr>
+          <td>Usia</td>
+          <td>17</td>
+      </tr>
+      <tr>
+          <td>Lokasi</td>
+          <td>Jakarta, Indonesia</td>
+      </tr>
+      <tr>
+          <td>Pengalaman</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Email</td>
+          <td>developer@hacktiv8.com</td>
+      </tr>
+  </table>
+</div>
+</section>
+
+<section>
+<form action="return false;">
+  <div>
+      <label for="nama">Nama</label>
+      <br>
+      <input type="text">
+  </div>
+  <div>
+      <label for="role">Role</label>
+      <br>
+      <input type="text">
+  </div>
+  <div>
+      <label for="availability">Availability</label>
+      <br>
+      <input type="text">
+  </div>
+  <div>
+      <label for="age">Age</label>
+      <br>
+      <input type="number">
+  </div>
+  <div>
+      <label for="lokasi">Lokasi</label>
+      <br>
+      <input type="text">
+  </div>
+  <div>
+      <label for="experience">Year Experience</label>
+      <br>
+      <input type="number">
+  </div>
+  <div>
+      <label for="email">Email</label>
+      <br>
+      <input type="email">
+  </div>
+
+  <input type="submit" value="SUBMIT">
+</form>
+</section>
+
+</body>
+</html>
+
+</body>
+</html>

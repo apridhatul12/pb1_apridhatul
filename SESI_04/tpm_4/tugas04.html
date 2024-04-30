@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingkaran</title>
+</head>
+<body>
+    <input type="number"placeholder="Jari-jari lingkaran (cm)" id="jari">
+    <button onclick="lingkaran()">Hitung Keliling Lingkaran</button>
+    hasil:<span id="hasilkeliling"></span>
+    <br>
+    <br>
+    <input type="number"placeholder="Jari-jari lingkaran (cm)" id="luas">
+    <button onclick="lingkaran()">Hitung Luas Lingkaran</button>
+    hasil:<span id="hasilluas"></span>
+
+<script>
+    function lingkaran() {
+        document.getElementById('hasilkeliling'). innerHTML=3.14*2*parseFloat(jari.value);
+
+        document.getElementById('hasilluas'). innerHTML=3.14*parseFloat(Math.pow(luas.value, 2));
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/41829337-tugas-mandiri-sesi-4 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="https://cdn.thinkific.com/" rel="preconnect">
+<link crossorigin="true" href="https://fonts.gstatic.com/" rel="preconnect">
+<link rel="preload" href="./Tugas Mandiri Sesi 4_files/vendor-ed5462f20c50cc94c351a7ebd7fe1d6a.js.download" as="script" crossorigin="">
+<link rel="preload" href="./Tugas Mandiri Sesi 4_files/course-player-v2-4f15ea8be3e65cb39195c4a6d71c2642.js.download" as="script" crossorigin="">
+<link rel="preload" href="./Tugas Mandiri Sesi 4_files/vendor-e0cb822bbe090c173fe20baeb13b0c48.css" as="style" crossorigin="">
+<link rel="preload" href="./Tugas Mandiri Sesi 4_files/course-player-v2-14b76be7ee27216b34794a7cd39efded.css" as="style" crossorigin="">
+<script async="" src="./Tugas Mandiri Sesi 4_files/gtm.js.download"></script><script src="./Tugas Mandiri Sesi 4_files/325782605039499" async=""></script><script async="" src="./Tugas Mandiri Sesi 4_files/fbevents.js.download"></script><script async="" src="./Tugas Mandiri Sesi 4_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Tugas Mandiri Sesi 4_files/mixpanel-2.2.min.js.download"></script><script>
+  if (typeof mixpanel === 'undefined') {
+    (function(e,b){if(!b.__SV){
+    var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+    typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+    b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+  }
+  
+  if (false) {
+    mixpanel.init('', {
+      cross_subdomain_cookie: false
+    });
+  }
+  
+  if(true) {
+    mixpanel.init('e9f85a260e22673665c335ea07907e45', {
+      cross_subdomain_cookie: false,
+      loaded: function(thinkificSystem) {
+        thinkificSystem.identify('3194750');
+  
+        const MAX_ATTEMPTS = 5;
+        let attempts = 0;
+        let delay = 500;
+  
+        const processEvents = function() {
+          attempts += 1;
+          delay *= 2;
+  
+          if (typeof ThinkificAnalytics !== 'undefined') {
+            ThinkificAnalytics.process_system_events_queue();
+          } else if (attempts < MAX_ATTEMPTS) {
+            setTimeout(processEvents, delay);
+          }
+        }
+  
+        // Attempt to process system events after an initial delay to allow time for ThinkificAnalytics
+        // to become available on the window object. Supports incrementally-delayed retries up to a maximum
+        // amount to accommodate for cases where ThinkificAnalytics takes longer than normal to be mounted.
+        setTimeout(processEvents, delay);
+      }
+    }, 'thinkific_system');
+  
+    // Unregister particular tenant event properties for thinkific_system events on Tenant sites.
+    // Properties will be re-registered when initializing mixpanel via the _mixpanel_instructor partial.
+    mixpanel.thinkific_system.unregister('Application');
+    mixpanel.thinkific_system.unregister('Current Page');
+    mixpanel.thinkific_system.unregister('Referrer Page');
+  }
+</script>
+
+
+
+
+
+
+<script>
+  (function () {
+    window.Thinkific = window.Thinkific || {};
+  
+    if (true) {
+        window.Thinkific.current_user = {"id":197812182,"first_name":"Apridhatul","last_name":"Laili","email":"apridhatullaili@gmail.com","external_source":null,"subdomain":"hacktiv8-ptp","full_name":"Apridhatul Laili","created_at":1713533898,"last_sign_in_at":1714311246,"number_courses_complete":1,"external_id":null,"tenant_id":236035,"groups":[],"locale":"en","site_owner":false};
+    } else {
+        window.Thinkific.current_user = null;
+    }
+    window.dispatchEvent(new Event('thnc.current_user-initialized'));
+  })();
+</script>
+
+<title>Belajar Langkah Fundamental Untuk Menjadi Web Programmer - KODE by Hacktiv8
+</title>
+
+
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-2b2a25e4f5dd02e6159","applicationID":"546174210","transactionName":"JwkNERYOCVpXSxcADBEUEAAXThFXWVw=","queueTime":2,"applicationTime":236,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"594336846",accountID:"3481338",trustKey:"3414783",xpid:"VwIPUFVQABAFUFdTAAUFV1Q=",licenseKey:"NRJS-2b2a25e4f5dd02e6159",applicationID:"546174210"};;/*! For license information please see nr-loader-spa-1.257.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>E,OP:()=>N,lF:()=>D,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>w,sU:()=>O});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function E(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const _=(0,n.mF)().o;var x=r(385),R=r(6818);const T={buildEnv:R.Re,customTransaction:void 0,disabled:!1,distMethod:R.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:R.q4,denyList:void 0,harvestCount:0,timeKeeper:void 0},S={};function N(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!S[e])throw new Error("Runtime for ".concat(e," was never set"));return S[e]}function O(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");S[e]=(0,i.D)(t,T);const r=(0,n.ek)(e);r&&(r.runtime=S[e])}function D(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.257.0",i="PROD",o="CDN",a="2.0.0-alpha.12"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(Date.now()-performance.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occurred while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{LP:()=>l,RP:()=>c,o5:()=>u});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){d(e),s[e].get(t)&&s[e].delete(t),s[e].size&&f(e)}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(d(e),!e||!s[e].get(t)||r)return h(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=[...s[e]];t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),h(e,r)})))}function h(e,t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)p(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}r.isolatedBacklog||delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=h(n),c=g(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=v()[s[e]];p&&p.push([f,e,r,a]);return a},get:m,listeners:g,context:h,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function h(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function p(e,t){n[e]=g(e).concat(t)}function g(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.fP)();d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,IK:()=>u,K4:()=>i,oD:()=>o,uT:()=>c,wO:()=>s});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>c,T:()=>s});var n=r(8325),i=r(385);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i._A.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},7872:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const i=n?.leading||!1;let o;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];i&&void 0===o&&(e.apply(t,a),o=setTimeout((()=>{o=clearTimeout(o)}),r)),i||(clearTimeout(o),o=setTimeout((()=>{e.apply(t,a)}),r))}}function i(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,i=new Array(n),o=0;o<n;o++)i[o]=arguments[o];e.apply(t,i)}}}r.d(t,{D:()=>n,Z:()=>i})},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(385),i=r(7894);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n._A.NREUM||(n._A.NREUM={}),void 0===n._A.newrelic&&(n._A.newrelic=n._A.NREUM),n._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:n._A.setTimeout,SI:n._A.setImmediate,CT:n._A.clearTimeout,XHR:n._A.XMLHttpRequest,REQ:n._A.Request,EV:n._A.Event,PR:n._A.Promise,MO:n._A.MutationObserver,FETCH:n._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},7806:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>S,QU:()=>D,_L:()=>j,Gm:()=>M,Lg:()=>L,BV:()=>Z,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var A="fetch-",E=A+"body-",w=["arrayBuffer","blob","json","text","formData"],_=f._A.Request,x=f._A.Response,R="prototype";const T={};function S(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(_&&x&&f._A.fetch))return t;if(T[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return T[t.debugId]=1,w.forEach((e=>{r(_[R],e,E),r(x[R],e,E)})),r(f._A,"fetch",A),t.on(A+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(A+"done",[null,r],n)}else t.emit(A+"done",[e],n)})),t}const N={},O=["pushState","replaceState"];function D(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||N[t.debugId]++||(N[t.debugId]=1,c(t).inPlace(window.history,O,"-")),t}var P=r(3239);const I={},C=["appendChild","insertBefore","replaceChild"];function j(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||I[t.debugId])return t;I[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,C,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,P.m$)(!1)),e.removeEventListener("error",f,(0,P.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,P.m$)(!1)),e.removeEventListener("error",f,(0,P.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,P.m$)(!1)),e.addEventListener("error",f,(0,P.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function M(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const H={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(H[t.debugId])return t;H[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const U={},z="setTimeout",F="setInterval",B="clearTimeout",G="-start",q="-",V=[z,"setImmediate",F,B,"clearImmediate"];function Z(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(U[t.debugId]++)return t;U[t.debugId]=1;var r=c(t);return r.inPlace(f._A,V.slice(0,2),z+q),r.inPlace(f._A,V.slice(2,3),F+q),r.inPlace(f._A,V.slice(3),B+q),t.on(F+G,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(z+G,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var K=r(50);const W={},X=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(W[r.debugId]++)return r;W[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",E)}),(0,P.m$)(!1))}catch(e){(0,K.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",E)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,X,"-xhr-",E),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(A):u?u(A):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(A).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||A()}));function A(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function E(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{Ef:()=>o,J0:()=>f,Mi:()=>l,Vb:()=>a,Ye:()=>c,fm:()=>u,i9:()=>s,t9:()=>i,u0:()=>d});var n=r(7056);const i=r(3325).D.sessionReplay,o={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"},a=.12,s={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},c=1e6,u=64e3,d={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},l={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},f=5e3},3112:(e,t,r)=>{"use strict";r.d(t,{HM:()=>c,ev:()=>o,rU:()=>s,wi:()=>u});var n=r(234),i=r(385);function o(e){return i.il&&!0===(0,n.Mt)(e,"privacy.cookies_enabled")}function a(e){return!!n.Yu.MO&&o(e)&&!0===(0,n.Mt)(e,"session_trace.enabled")}function s(e){return!0===(0,n.Mt)(e,"session_replay.preload")&&a(e)}function c(e,t){return!!a(e)&&(!!t?.isNew||!!t?.state.sessionReplayMode)}function u(e,t){const r=t.correctAbsoluteTimestamp(e);return{originalTimestamp:e,correctedTimestamp:r,timestampDiff:e-r,timeKeeperOriginTime:t.originTime,timeKeeperCorrectedOriginTime:t.correctedOriginTime,timeKeeperDiff:Math.floor(t.originTime-t.correctedOriginTime)}}},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},6216:(e,t,r)=>{"use strict";r.d(t,{K8:()=>s,QZ:()=>c,cS:()=>o,sE:()=>i,t9:()=>a,vh:()=>u});var n=r(3325);const i=["click","keydown","submit"],o="api",a=n.D.softNav,s={INITIAL_PAGE_LOAD:"",ROUTE_CHANGE:1,UNSPECIFIED:2},c={INTERACTION:1,AJAX:2,CUSTOM_END:3,CUSTOM_TRACER:4},u={IP:"in progress",FIN:"finished",CAN:"cancelled"}},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>w,CB_END:()=>_,CB_START:()=>u,END:()=>E,FEATURE_NAME:()=>i,FETCH:()=>R,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>x,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>A,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,A="-start",E="-end",w="-body",_="cb"+E,x="jsTime",R="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2758:(e,t,r)=>{"use strict";r.d(t,{j:()=>_});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(8e3),c=r(3960),u=r(385),d=r(50),l=r(3081),f=r(8632),h=r(7144);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay",h.Ef.RECORD,h.Ef.PAUSE],g=["setErrorHandler","finished","addToTrace","addRelease"];var m=r(7894),v=r(7056);function b(){const e=(0,f.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}const y={};var A=r(2825);const E=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let w=!1;function _(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,_=arguments.length>3?arguments[3]:void 0,{init:x,info:R,loader_config:T,runtime:S={loaderType:p},exposed:N=!0}=t;const O=(0,f.gG)();R||(x=O.init,R=O.info,T=O.loader_config),(0,i.Dg)(e.agentIdentifier,x||{}),(0,i.GE)(e.agentIdentifier,T||{}),R.jsAttributes??={},u.v6&&(R.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,R);const D=(0,i.P_)(e.agentIdentifier),P=[R.beacon,R.errorBeacon];w||(D.proxy.assets&&(E(D.proxy.assets),P.push(D.proxy.assets)),D.proxy.beacon&&P.push(D.proxy.beacon),b(),(0,f.EZ)("activatedFeatures",A.T),e.runSoftNavOverSpa&&=!0===D.soft_navigations.enabled&&D.feature_flags.includes("soft_nav")),S.denyList=[...D.ajax.deny_list||[],...D.ajax.block_internal?P:[]],(0,i.sU)(e.agentIdentifier,S),void 0===e.api&&(e.api=function(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.RP)(e,"api");const p={};var b=a.ee.get(e),A=b.get("tracer");y[e]=v.IK.OFF,b.on(h.Ef.REPLAY_RUNNING,(t=>{y[e]=t}));var E="api-",w=E+"ixn-";function _(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),T(E,n,!0,o||null===r?"session":void 0)(t,r)}function x(){}g.forEach((e=>{p[e]=T(E,e,!0,"api")})),p.addPageAction=T(E,"addPageAction",!0,n.D.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,T(E,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return _(e,t,"setCustomAttribute",r);(0,d.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,d.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setUserId=function(e){if("string"==typeof e||null===e)return _("enduser.id",e,"setUserId",!0);(0,d.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return _("application.version",e,"setApplicationVersion",!1);(0,d.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},p.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(l.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,b);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,d.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{b.emit("".concat(e,"-opt-in"))}))}catch(e){(0,d.Z)("An unexpected issue occurred",e)}},p[h.Ef.RECORD]=function(){(0,o.p)(l.xS,["API/recordReplay/called"],void 0,n.D.metrics,b),(0,o.p)(h.Ef.RECORD,[],void 0,n.D.sessionReplay,b)},p[h.Ef.PAUSE]=function(){(0,o.p)(l.xS,["API/pauseReplay/called"],void 0,n.D.metrics,b),(0,o.p)(h.Ef.PAUSE,[],void 0,n.D.sessionReplay,b)},p.interaction=function(e){return(new x).get("object"==typeof e?e:{})};const R=x.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(l.xS,["API/createTracer/called"],void 0,n.D.metrics,b),f||(0,o.p)(w+"tracer",[(0,m.z)(),e,r],i,n.D.spa,b),function(){if(A.emit((a?"":"no-")+"fn-start",[(0,m.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw A.emit("fn-err",[arguments,this,e],r),e}finally{A.emit("fn-end",[(0,m.z)()],r)}}}};function T(e,t,r,i){return function(){return(0,o.p)(l.xS,["API/"+t+"/called"],void 0,n.D.metrics,b),i&&(0,o.p)(e+t,[(0,m.z)(),...arguments],r?null:this,i,b),r?void 0:this}}function S(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,s.LP)(e,"api")})).catch((()=>{(0,d.Z)("Downloading runtime APIs failed..."),b.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{R[e]=T(w,e,void 0,f?n.D.softNav:n.D.spa)})),p.setCurrentRouteName=f?T(w,"routeName",void 0,n.D.softNav):T(E,"routeName",!0,n.D.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(l.xS,["API/noticeError/called"],void 0,n.D.metrics,b),(0,o.p)("err",[t,(0,m.z)(),!1,r,!!y[e]],void 0,n.D.jserrors,b)},u.il?(0,c.b2)((()=>S()),!0):S(),p}(e.agentIdentifier,_,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=N),w=!0}},8993:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.softNav]:9,[n.sessionReplay]:10}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.257.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.257.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-ANmGkHR8C/aA941pbKL4FBoXtrR+1TeFfluIxpUQ535UOjSH+R7WSAVxIstTpyEp073k4brvwNNUX2c10rYrIA==",433:"sha512-N8gRlCqzw2lS+m3CL/mMjjNHJfRgBBf1Wfm55jx7Wv931+jmXGDC3pxe1yqoD84+px94W8pRM9DOlwxTTz6YMQ==",164:"sha512-rwz2SW2q0W35zYJMBkNUd4b2uib909wiCPDSMMR/4ecOYSJOwG3RUWWIUW04vVmSYnmQbJHkMibLArUPJBimkw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.257.0.PROD"]=self["webpackChunk:NRBA-1.257.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8993);var e=i(50),t=i(7144),r=i(4402);class n{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.ky)(16);this.agentIdentifier=e}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.Ef.RECORD)}pauseReplay(){return this.#e(t.Ef.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var o=i(3325),a=i(234);const s=Object.values(o.D);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(2758);var d=i(8e3),l=i(5938),f=i(3960),h=i(385),p=i(3112),g=i(7872);class m extends l.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,a.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.RP)(e,r):this.ee.on("".concat(this.featureName,"-opt-in"),(0,g.Z)((()=>{(0,d.RP)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if((0,p.ev)(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t),this.featureName===o.D.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.LP)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),r),this.abortHandler?.(),(0,d.LP)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};h.il?(0,f.b2)((()=>n()),!0):n()}#t(e,t){return e!==o.D.sessionReplay||(0,p.HM)(this.agentIdentifier,t)}}var v=i(7633);class b extends m{static featureName=v.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,v.t,r),this.importAggregator()}}var y=i(1117),A=i(1284);class E extends y.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,A.D)(e,(function(e,r){t[e]=w(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,A.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=w(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=_(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=w(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=_(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function _(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var x=i(8632),R=i(4351);var T=i(5546),S=i(7956),N=i(3239),O=i(9251),D=i(7894);class P extends m{static featureName=O.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,O.t,r),h.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,D.z)()],void 0,O.t,this.ee)),!0),(0,N.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,D.z)()],void 0,O.t,this.ee))),this.importAggregator())}}var I=i(3081);class C extends m{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}var j=i(6660);class k{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class M extends m{static featureName=j.t;#r=new Set;#n=!1;constructor(e,r){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,j.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,r)=>{this.abortHandler&&!this.#r.has(r)&&(this.#r.add(r),(0,T.p)("err",[this.#i(r),(0,D.z)()],void 0,o.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#i(e),(0,D.z)(),!0,{},this.#n],void 0,o.D.jserrors,this.ee)})),this.ee.on(t.Ef.REPLAY_RUNNING,(e=>{this.#n=e})),h._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#o(e),(0,D.z)(),!1,{unhandledPromiseRejection:1},this.#n],void 0,o.D.jserrors,this.ee)}),(0,N.m$)(!1,this.removeOnAbort?.signal)),h._A.addEventListener("error",(e=>{this.abortHandler&&(this.#r.has(e.error)?this.#r.delete(e.error):(0,T.p)("err",[this.#a(e),(0,D.z)(),!1,{},this.#n],void 0,o.D.jserrors,this.ee))}),(0,N.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#s,this.importAggregator()}#s(){this.removeOnAbort?.abort(),this.#r.clear(),this.abortHandler=void 0}#i(e){return e instanceof Error?e:void 0!==e?.message?new k(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new k("string"==typeof e?e:(0,R.P)(e))}#o(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new k(t);const r=this.#i(e.reason);return r.message=t+r.message,r}#a(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new k(e.message,e.filename,e.lineno,e.colno);return t.name=SyntaxError.name,t}return e.error instanceof Error?e.error:new k(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let L=1;const U="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===h._A?0:(0,H.X)(e,U,(function(){return L++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,R.P)(e).length}catch(e){return}}}var B=i(7806),G=i(7243);class q{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,a.DL)(this.agentIdentifier);if(!t)return null;var n=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!n||!i)return null;var s=(0,r.M)(),c=(0,r.Ht)(),u=Date.now(),d={spanId:s,traceId:c,timestamp:u};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(d.traceContextParentHeader=this.generateTraceContextParentHeader(s,c),d.traceContextStateHeader=this.generateTraceContextStateHeader(s,u,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(d.newrelicHeader=this.generateTraceHeader(s,c,u,n,i,o)),d}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof h._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,R.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,a.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,a.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var i=(0,G.e)(r.allowed_origins[n]);if(e.hostname===i.hostname&&e.protocol===i.protocol&&e.port===i.port){t=!0;break}}return t}isDtEnabled(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,a.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),Z=["load","error","abort","timeout"],K=Z.length,W=a.Yu.REQ,X=a.Yu.XHR;class Y extends m{static featureName=V.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,r),(0,a.OP)(e).xhrWrappable){this.dt=new q(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};h._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const r={status:t.responseStatus},n={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};J(r,t.name),this.handler("xhr",[r,n,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,o.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,r,n){function i(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=w,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){_(t,e)}),(0,N.m$)(!1)),h.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,N.m$)(!1))}function s(e){this.params={method:e[0]},J(this,e[1]),this.metrics={}}function c(t,r){var i=(0,a.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var o=n.generateTracePayload(this.parsedOrigin);if(o){var s=!1;o.newrelicHeader&&(r.setRequestHeader("newrelic",o.newrelicHeader),s=!0),o.traceContextParentHeader&&(r.setRequestHeader("traceparent",o.traceContextParentHeader),o.traceContextStateHeader&&r.setRequestHeader("tracestate",o.traceContextStateHeader),s=!0),s&&(this.dt=o)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,D.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<K;s++)r.addEventListener(Z[s],this.listener,(0,N.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function l(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,D.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,D.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,D.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&h.il&&(t=""+h._A.location.href):e[0]&&e[0].url?t=e[0].url:h._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,G.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=n.generateTracePayload(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,i)&&(this.dt=i);else{var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),s(o.headers,i)&&(this.dt=i),e.length>1?e[1]=o:e.push(o)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,D.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:h._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),J(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=F(n.body)||0}function E(e,t){var n;this.endTime=(0,D.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var i={txSize:this.txSize,rxSize:n,duration:(0,D.z)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this,o.D.ajax)}function w(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;i<K;i++)e.removeEventListener(Z[i],this.listener,!1);t.aborted||(n.duration=(0,D.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):_(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,o.D.ajax))}}function _(e,r){e.params.status=r.status;var n=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(r,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var i=r.getResponseHeader("X-NewRelic-App-Data");i&&((0,T.p)(I.mY,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,o.D.metrics,t),e.params.cat=i.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",i),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",l),t.on("xhr-load-removed",f),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",A),t.on("fn-start",v),t.on("fetch-done",E)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function J(e,t){var r=(0,G.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var Q=i(3614);const{BST_RESOURCE:ee,RESOURCE:te,START:re,END:ne,FEATURE_NAME:ie,FN_END:oe,FN_START:ae,PUSH_STATE:se}=Q;var ce=i(7056);class ue extends m{static featureName=t.t9;constructor(e,r){let n,i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,t.t9,i),this.replayRunning=!1;try{n=JSON.parse(localStorage.getItem("".concat(ce.Bq,"_").concat(ce.K4)))}catch(e){}this.#c(n)?this.#u(n?.sessionReplayMode):this.importAggregator(),this.ee.on("err",(e=>{this.replayRunning&&(this.errorNoticed=!0,(0,T.p)(t.Ef.ERROR_DURING_REPLAY,[e],void 0,this.featureName,this.ee))})),this.ee.on(t.Ef.REPLAY_RUNNING,(e=>{this.replayRunning=e}))}#c(e){return e&&(e.sessionReplayMode===ce.IK.FULL||e.sessionReplayMode===ce.IK.ERROR)||(0,p.rU)(this.agentIdentifier)}async#u(e){const{Recorder:t}=await Promise.all([i.e(111),i.e(433)]).then(i.bind(i,4345));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier,ee:this.ee}),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording,this.importAggregator({recorder:this.recorder,errorNoticed:this.errorNoticed})}}var de=i(6216);class le extends m{static featureName=de.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,de.t9,r),!h.il||!a.Yu.MO)return;const n=(0,B.QU)(this.ee),i=(0,B.em)(this.ee),o=()=>(0,T.p)("newURL",[(0,D.z)(),""+window.location],void 0,this.featureName,this.ee);n.on("pushState-end",o),n.on("replaceState-end",o);try{this.removeOnAbort=new AbortController}catch(e){}(0,N.bP)("popstate",(e=>(0,T.p)("newURL",[e.timeStamp,""+window.location],void 0,this.featureName,this.ee)),!0,this.removeOnAbort?.signal);let s=!1;const c=new a.Yu.MO(((e,t)=>{s||(s=!0,requestAnimationFrame((()=>{(0,T.p)("newDom",[(0,D.z)()],void 0,this.featureName,this.ee),s=!1})))})),u=(0,g.D)((e=>{(0,T.p)("newUIEvent",[e],void 0,this.featureName,this.ee),c.observe(document.body,{attributes:!0,childList:!0,subtree:!0,characterData:!0})}),100,{leading:!0});i.on("fn-start",(e=>{let[t]=e;de.sE.includes(t?.type)&&u(t)}));for(let e of de.sE)document.addEventListener(e,(()=>{}));this.abortHandler=function(){this.removeOnAbort?.abort(),c.disconnect(),this.abortHandler=void 0},this.importAggregator({domObserver:c})}}var fe=i(7836);const{FEATURE_NAME:he,START:pe,END:ge,BODY:me,CB_END:ve,JS_TIME:be,FETCH:ye,FN_START:Ae,CB_START:Ee,FN_END:we}=fe;var _e=i(4649);class xe extends m{static featureName=_e.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,_e.t,r),this.importAggregator()}}new class extends n{constructor(t,r){super(r),h._A?(this.sharedAggregator=new E({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(b),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.D.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initialize the agent. Could not determine the runtime environment.")}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.p[e.featureName]-o.p[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.D.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.D.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.D.softNav)return;const n=function(e){switch(e){case o.D.ajax:return[o.D.jserrors];case o.D.sessionTrace:return[o.D.ajax,o.D.pageViewEvent];case o.D.sessionReplay:return[o.D.sessionTrace];case o.D.pageViewTiming:return[o.D.pageViewEvent];default:return[]}}(r.featureName);n.every((e=>e in this.features))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has not been initialized (").concat((0,R.P)(n),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[Y,b,P,class extends m{static featureName=ie;constructor(e,t){if(super(e,t,ie,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!h.il)return;const r=this.ee;let n;(0,B.QU)(r),this.eventsEE=(0,B.em)(r),this.eventsEE.on(ae,(function(e,t){this.bstStart=(0,D.z)()})),this.eventsEE.on(oe,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,D.z)()],void 0,o.D.sessionTrace,r)})),r.on(se+re,(function(e){this.time=(0,D.z)(),this.startPath=location.pathname+location.hash})),r.on(se+ne,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,o.D.sessionTrace,r)}));try{n=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(ee,[t],void 0,o.D.sessionTrace,r)})),n.observe({type:te,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:n})}},ue,C,xe,M,le,class extends m{static featureName=he;constructor(e,t){if(super(e,t,he,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!h.il)return;if(!(0,a.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,n=0;const i=this.ee.get("tracer"),o=(0,B._L)(this.ee),s=(0,B.Lg)(this.ee),c=(0,B.BV)(this.ee),u=(0,B.Kf)(this.ee),d=this.ee.get("events"),l=(0,B.u5)(this.ee),f=(0,B.QU)(this.ee),p=(0,B.Gm)(this.ee);function g(e,t){f.emit("newURL",[""+window.location,t])}function m(){n++,r=window.location.hash,this[Ae]=(0,D.z)()}function v(){n--,window.location.hash!==r&&g(0,!0);var e=(0,D.z)();this[be]=~~this[be]+e-this[Ae],this[we]=e}function b(e,t){e.on(t,(function(){this[t]=(0,D.z)()}))}this.ee.on(Ae,m),s.on(Ee,m),o.on(Ee,m),this.ee.on(we,v),s.on(ve,v),o.on(ve,v),this.ee.buffer([Ae,we,"xhr-resolved"],this.featureName),d.buffer([Ae],this.featureName),c.buffer(["setTimeout"+ge,"clearTimeout"+pe,Ae],this.featureName),u.buffer([Ae,"new-xhr","send-xhr"+pe],this.featureName),l.buffer([ye+pe,ye+"-done",ye+me+pe,ye+me+ge],this.featureName),f.buffer(["newURL"],this.featureName),p.buffer([Ae],this.featureName),s.buffer(["propagate",Ee,ve,"executor-err","resolve"+pe],this.featureName),i.buffer([Ae,"no-"+Ae],this.featureName),o.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(l,ye+pe),b(l,ye+"-done"),b(o,"new-jsonp"),b(o,"jsonp-end"),b(o,"cb-start"),f.on("pushState-end",g),f.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,N.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,N.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,n>1)}),(0,N.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#s,this.importAggregator()}#s(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link href="./Tugas Mandiri Sesi 4_files/css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/thinkific-import/236035/dghlKaiYRO6j6pZMJBaw_favicon.ico">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="2Je58cA781qoRTpRZfhGfhAXlswlWEpKac7FB0lmteYuhWUG7nf78RIB5zZhu2l54EV9BpsR3FcYktrdeiZbHA==">
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  var thinkific_google_analytics_disabled = ""
+  if (!thinkific_google_analytics_disabled) {
+    var tcd = "thinkific.com";
+    ga('create', 'UA-30557184-1', 'auto', { 'cookieDomain': tcd });
+    ga('send', 'pageview');
+  }
+  
+  var tenantGoogleAnalyticsKey = "";
+  
+  if(tenantGoogleAnalyticsKey) {
+    var tenantCD = "www.kode.id";
+    ga('create', tenantGoogleAnalyticsKey, 'auto', { 'name': 'tenantTracker', 'cookieDomain': tenantCD });
+    ga('tenantTracker.send', 'pageview');
+  }
+</script>
+<script async="" src="./Tugas Mandiri Sesi 4_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);};
+  gtag('js', new Date());
+  gtag('config', 'G-9JFKH33YWF');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '325782605039499');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none" 
+       src="https://www.facebook.com/tr?id={your-pixel-id-goes-here}&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<link href="./Tugas Mandiri Sesi 4_files/toga-icons.css" rel="stylesheet" type="text/css">
+<link href="./Tugas Mandiri Sesi 4_files/toga-product-icons.css" rel="stylesheet" type="text/css">
+<meta name="kobayashi" content="3d23908d62f33242ba87a2b36949fbb7988e34d1">
+<link rel="stylesheet" media="all" href="./Tugas Mandiri Sesi 4_files/froala-v2-custom-theme-cc911291c9102726b1b9573d52de458d7c46ab95c709f6a59c4b7cba6482f3aa.css">
+<link rel="stylesheet" href="./Tugas Mandiri Sesi 4_files/vendor-e0cb822bbe090c173fe20baeb13b0c48.css">
+<link rel="stylesheet" href="./Tugas Mandiri Sesi 4_files/course-player-v2-14b76be7ee27216b34794a7cd39efded.css">
+<meta name="description" content="Belajar Langkah Fundamental Untuk Menjadi Web Programmer - KODE by Hacktiv8">
+<style>
+  
+</style>
+
+
+
+</head>
+<body id="courses" class="take hacktiv8-ptp-tenant  course-id-1396746"><noscript>
+<style>
+  body {
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+  }
+  #wrap {
+    display: none;
+  }
+  .noscript-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+  }
+  .noscript-container i {
+    font-size: 50px;
+  }
+  .noscript-container h3 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .noscript-container p {
+    font-size: 16px;
+    color: #929292;
+  }
+  .noscript-container a {
+    color: #1b9eea;
+  }
+  .noscript-container a.btn,
+  .noscript-container a.btn:visited {
+    padding: 8px 20px;
+    margin-top: 20px;
+    border: 1px solid #929292;
+    border-radius: 3px;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+  }
+  .noscript-container a.btn:hover {
+    background-color: #e6e6e6;
+  }
+</style>
+<div class='noscript-container'>
+<i class='icon-settings'></i>
+<h3>The content is here but you need to enable JavaScript to view it.</h3>
+<p>Please <a rel= "noreferrer noopener" target="_blank" href="https://www.enable-javascript.com">enable JavaScript</a> in your browser settings and reload the page.</p>
+<a class="btn" href="">Reload page</a>
+</div>
+</noscript>
+
+<div id="wrap">
+<div id="data-store">
+<input id="CourseSlug" type="hidden" value="Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer">
+</div>
+<div id="page-content" class="ember-application"><div id="modal-overlays"></div><div id="ember399" class="ember-view"><div style="--position: -150px; --rotation: 0deg;" class="mobile-pull-to-refresh">
+    <div class="refresh-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 20q-3.35 0-5.675-2.325Q4 15.35 4 12q0-3.35 2.325-5.675Q8.65 4 12 4q1.725 0 3.3.713 1.575.712 2.7 2.037V4h2v7h-7V9h4.2q-.8-1.4-2.187-2.2Q13.625 6 12 6 9.5 6 7.75 7.75T6 12q0 2.5 1.75 4.25T12 18q1.925 0 3.475-1.1T17.65 14h2.1q-.7 2.65-2.85 4.325Q14.75 20 12 20Z"></path></svg>
+    </div>
+</div>
+<div class="course-player  _course-player_1jimy1">
+<!---->    <link href="./Tugas Mandiri Sesi 4_files/css(1)" rel="stylesheet">
+
+<style>
+  body,
+  button,
+  input,
+  textarea {
+    font-family:Open Sans;
+  }
+  [data-theme] .brand-color__background {
+    background-color:#203e71;
+  }
+
+  [data-theme] .brand-color__text {
+    color:#203e71;
+  }
+
+  [data-theme] .brand-color__dynamic-text {
+    color:#ffffff;
+  }
+
+  [data-theme] .brand-color__fill {
+    fill:#203e71;
+  }
+
+  [data-theme] .brand-color__border {
+    border-color:#203e71;
+  }
+
+  [data-theme] .brand-color__border-60-opacity {
+    border-color:rgba(32, 62, 113, 0.6);
+  }
+
+  [data-theme] .brand-color__border-60-opacity:not([disabled]):hover {
+    border-color:#203e71;
+  }
+
+  [data-theme] .brand-color__background-30-opacity:not([disabled]):hover {
+    background-color:rgba(32, 62, 113, 0.3);
+  }
+
+  .course-player__content-item .toga-icon-checkmark::before {
+    color:#ffffff !important;
+  }
+
+  .course-player__chapter-item__header .toga-icon-checkmark::before {
+    color:#ffffff !important;
+  }
+</style>
+
+  <div data-theme="light-theme" id="player-wrapper" class="course-player__container     _course-player__container_n1vbpj">
+    <a href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/41829337-tugas-mandiri-sesi-4#main-content" class="skip-link">
+      Skip to main content
+    </a>
+    <!---->
+      <header class="course-player__top-bar brand-color__background left-drawer--open _top-bar_n1vbpj">
+        <div class="_container_v3q4ce">
+  <button aria-label="Enable menu" class="course-player__top-bar__menu-toggle brand-color__dynamic-text _top-bar__menu-toggle_v3q4ce" data-ember-action="" data-ember-action-680="680">
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+  </button>
+
+  <div class="top-bar__dashboard-link _top-bar__dashboard-link_v3q4ce">
+      <a href="https://www.kode.id/enrollments" data-qa="dashboard__path" class="top-bar__dashboard-link__anchor brand-color__dynamic-text">
+        <i aria-hidden="true" class="top-bar__dashboard-link__icon toga-icon toga-icon-caret-stroke-left brand-color__dynamic-text"></i>
+        Kembali ke Dashboard
+      </a>
+  </div>
+  <section class="course-player__top-bar__branding _top-bar__branding_v3q4ce">
+      <div class="_logo__container_v3q4ce">
+        <img src="./Tugas Mandiri Sesi 4_files/1693566626310logo1080blackRebrandingBlue.png" alt="KODE by Hacktiv8" class="course-player__top-bar__logo _top-bar__logo_v3q4ce">
+      </div>
+  </section>
+</div>
+
+      </header>
+    <div class="course-player__content  left-drawer--open   _course-player__content_n1vbpj">
+
+      <nav aria-label="Chapters" class="course-player__left-drawer _left-drawer_n1vbpj">
+        <div class="course-player__course-navigation _course-navigation_t2nzf7">
+
+  <div id="ember700" class="ember-view"><section class="course-progress__container _course-progress__container_1rtg53">
+<section class="surface__container _surface__container_1yatsw _surface--default_1yatsw">
+      <div class="course-progress__school-name brand-color__background _course-progress__school-name_1rtg53">
+      <div class="_container_v3q4ce">
+  <button aria-label="Enable menu" class="course-player__top-bar__menu-toggle brand-color__dynamic-text _top-bar__menu-toggle_v3q4ce" data-ember-action="" data-ember-action-709="709">
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+  </button>
+
+  <div class="top-bar__dashboard-link _top-bar__dashboard-link_v3q4ce">
+      <a href="https://www.kode.id/enrollments" data-qa="dashboard__path" class="top-bar__dashboard-link__anchor brand-color__dynamic-text">
+        <i aria-hidden="true" class="top-bar__dashboard-link__icon toga-icon toga-icon-caret-stroke-left brand-color__dynamic-text"></i>
+        Kembali ke Dashboard
+      </a>
+  </div>
+  <section class="course-player__top-bar__branding _top-bar__branding_v3q4ce">
+      <div class="_logo__container_v3q4ce">
+        <img src="./Tugas Mandiri Sesi 4_files/1693566626310logo1080blackRebrandingBlue.png" alt="KODE by Hacktiv8" class="course-player__top-bar__logo _top-bar__logo_v3q4ce">
+      </div>
+  </section>
+</div>
+
+    </div>
+    <div class="course-progress__inner-container _course-progress__inner-container_1rtg53">
+      <a href="https://www.kode.id/enrollments" class="course-progress__dashboard-link _course-progress__dashboard-link_1rtg53">Kembali ke Dashboard</a>
+      <h1 class="course-progress__title _course-progress__title_1rtg53">Belajar Langkah Fundamental Untuk Menjadi Web Programmer</h1>
+      <div class="_course-progress__actions-container_1rtg53">
+        <div class="_course-progress__progress-bar__container_1rtg53">
+          <div style="width:100%;" class="brand-color__background _course-progress__progress-bar__inner_1rtg53"></div>
+        </div>
+        <p class="course-progress__percent-complete _course-progress__percent-complete_1rtg53"><span>100%</span> complete</p>
+<!----><!---->      </div>
+    </div>
+
+</section>
+</section>
+</div>
+
+    <div id="ember732" class="ember-view"><!----></div>
+
+  <div id="ember735" class=" ember-view"><div class="course-player__user-search _container_56qan">
+<div id="ember757" class="ember-basic-dropdown ember-view">
+<div aria-owns="ember-basic-dropdown-content-ember757" tabindex="0" data-ebd-id="ember757-trigger" role="button" id="ember762" class="ember-power-select-trigger ember-basic-dropdown-trigger ember-basic-dropdown-trigger--in-place ember-view">    <span class="ember-power-select-placeholder">Search by lesson title</span>
+
+<span class="ember-power-select-status-icon"></span>
+</div>
+  <div id="ember-basic-dropdown-content-ember757" style="display: none;" class="ember-basic-dropdown-content-placeholder"></div>
+
+</div>
+  <div id="user-content-search-power-select" class="course-player__user-search--power-select"></div>
+</div>
+</div>
+
+  <div class="course-player__chapters-menu ">
+    <div id="ember786" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="100" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h2 class="_chapter-item__title_d57kmg">Detail Pelatihan</h2>
+
+<!---->
+    <span class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      5 / 5
+      <span class="sr-only">Completed</span>
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-806="806">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/36707814-tentang-pelatihan" id="ember812" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tentang Pelatihan
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-830="830">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/36707622-cara-akses-webinar" id="ember831" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Cara Akses Webinar
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-842="842">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/36707820-tujuan-pembelajaran" id="ember843" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tujuan Pembelajaran
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-854="854">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/36707890-kompetensi-pelatihan" id="ember855" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Kompetensi Pelatihan
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-866="866">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/36707925-syarat-dan-ketentuan" id="ember867" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Syarat dan Ketentuan
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</div>
+    <div id="ember877" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="100" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h2 class="_chapter-item__title_d57kmg">Sesi 1 - Perkenalan: Pekerjaan Software Developer, Pemrogramman Berbasis Website, Installasi Tools</h2>
+
+<!---->
+    <span class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      13 / 13
+      <span class="sr-only">Completed</span>
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-889="889">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53274529-pre-test-a" id="ember890" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      PRE TEST A
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-912="912">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53274547-pre-test-b" id="ember913" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      PRE TEST B
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-924="924">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53274549-pre-test-c" id="ember925" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      PRE TEST C
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-936="936">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24994062-introduction-course-software-developer" id="ember937" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Introduction Course &amp; Software Developer
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-948="948">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24994294-web-programming-introduction" id="ember949" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Web Programming Introduction
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-960="960">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24994325-programming-tools-with-visual-studio-code" id="ember961" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Programming Tools with Visual Studio Code
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-972="972">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/quizzes/26473300-quiz-1" id="ember973" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Quiz 1
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-quiz _content-item__type-icon_nffvg8"></i>
+          Quiz
+            <span class="content-item__metadata text-capitalize">&nbsp;· 5 Questions</span>
+            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-991="991">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/52223958-tugas-mandiri-instruction" id="ember992" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tugas Mandiri Instruction 
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-999="999">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/41826100-tugas-mandisi-sesi-1" id="ember1000" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tugas Mandisi Sesi 1
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          PDF
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1018="1018">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/downloads/41766721-template-dan-lampiran-hasil-tugas-mandiri-sesi-1" id="ember1019" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Template dan Lampiran Hasil Tugas Mandiri Sesi 1
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-download _content-item__type-icon_nffvg8"></i>
+          Download
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1033="1033">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53276620-submission-tugas-mandiri" id="ember1034" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Submission Tugas Mandiri
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1045="1045">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/51963260-rubrik-sesi-1" id="ember1046" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Rubrik Sesi 1
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          PDF
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1053="1053">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53274599-nilai-tpm" id="ember1054" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      NILAI TPM
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</div>
+    <div id="ember1060" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="100" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h2 class="_chapter-item__title_d57kmg">Sesi 2 - HTML dan prakteknya dalam membuat Online Portfolio </h2>
+
+<!---->
+    <span class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      11 / 11
+      <span class="sr-only">Completed</span>
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1072="1072">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24996265-html5-introductions" id="ember1073" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      HTML5 Introductions
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1084="1084">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24996269-html-form" id="ember1085" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      HTML Form
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1096="1096">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24996270-html-layout" id="ember1097" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      HTML Layout
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1108="1108">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/36528257-portfolio-sederhana" id="ember1109" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Portfolio Sederhana
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1120="1120">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/quizzes/26473959-quiz-2" id="ember1121" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Quiz 2
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-quiz _content-item__type-icon_nffvg8"></i>
+          Quiz
+            <span class="content-item__metadata text-capitalize">&nbsp;· 5 Questions</span>
+            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1132="1132">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/52223959-tugas-mandiri-instruction" id="ember1133" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tugas Mandiri Instruction 
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1140="1140">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/41769935-tugas-mandiri-sesi-2" id="ember1141" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tugas Mandiri Sesi 2
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          PDF
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1152="1152">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/downloads/41770484-template-dan-lampiran-hasil-tugas-mandiri-sesi-2" id="ember1153" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Template dan Lampiran Hasil Tugas Mandiri Sesi 2
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-download _content-item__type-icon_nffvg8"></i>
+          Download
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1160="1160">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/51963267-rubrik-sesi-2" id="ember1161" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Rubrik Sesi 2
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          PDF
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1168="1168">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53276651-submission-tugas-mandiri-2" id="ember1169" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Submission Tugas Mandiri 2
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1180="1180">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53276662-nilai-tpm" id="ember1181" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      NILAI TPM
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</div>
+    <div id="ember1187" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="100" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h2 class="_chapter-item__title_d57kmg">Sesi 3 - Penggunaan CSS untuk styling serta dasar Git &amp; GitHub</h2>
+
+<!---->
+    <span class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      10 / 10
+      <span class="sr-only">Completed</span>
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1199="1199">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24999182-css-introductions" id="ember1200" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      CSS Introductions
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1211="1211">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24999187-css-implementations" id="ember1212" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      CSS Implementations
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1223="1223">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/46121058-learning-git-and-github-basics" id="ember1224" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Learning Git and GitHub Basics
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          PDF
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1235="1235">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/quizzes/26474027-quiz-3" id="ember1236" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Quiz 3
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-quiz _content-item__type-icon_nffvg8"></i>
+          Quiz
+            <span class="content-item__metadata text-capitalize">&nbsp;· 5 Questions</span>
+            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1247="1247">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/52224462-tugas-mandiri-instruction" id="ember1248" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tugas Mandiri Instruction 
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1255="1255">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/41826893-tugas-mandiri-sesi-3" id="ember1256" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tugas Mandiri Sesi 3
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          PDF
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1267="1267">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/downloads/41826909-template-dan-lampiran-hasil-tugas-mandiri-sesi-3" id="ember1268" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Template dan Lampiran Hasil Tugas Mandiri Sesi 3
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-download _content-item__type-icon_nffvg8"></i>
+          Download
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1275="1275">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/51963287-rubrik-sesi-3" id="ember1276" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Rubrik Sesi 3
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          PDF
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1283="1283">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53276722-submission-tugas-mandiri-3" id="ember1284" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Submission Tugas Mandiri 3
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1295="1295">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53515592-nilai-tpm" id="ember1296" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      NILAI TPM
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</div>
+    <div id="ember1302" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="100" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h2 class="_chapter-item__title_d57kmg">Sesi 4 - Algoritma </h2>
+
+<!---->
+    <span class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      10 / 10
+      <span class="sr-only">Completed</span>
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="false" style="">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1314="1314">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24999914-mengenal-algoritma" id="ember1315" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Mengenal Algoritma
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1326="1326">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/24999995-mengenal-pseudocode" id="ember1327" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Mengenal Pseudocode
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1338="1338">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/25000010-conditional-concept" id="ember1339" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Conditional Concept
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1350="1350">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/25000023-looping-concept" id="ember1351" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Looping Concept
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1362="1362">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/quizzes/26474112-quiz-4" id="ember1363" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Quiz 4
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-quiz _content-item__type-icon_nffvg8"></i>
+          Quiz
+            <span class="content-item__metadata text-capitalize">&nbsp;· 5 Questions</span>
+            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1374="1374">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/texts/52224476-tugas-mandiri-instruction" id="ember1375" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tugas Mandiri Instruction 
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1382="1382">
+<a aria-current="step" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/41829337-tugas-mandiri-sesi-4" id="ember1383" class="course-player__content-item__link _content-item__link_nffvg8 active ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Tugas Mandiri Sesi 4
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          PDF
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1394="1394">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/pdfs/51963305-rubrik-sesi-4" id="ember1395" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Rubrik Sesi 4
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-pdf _content-item__type-icon_nffvg8"></i>
+          PDF
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1402="1402">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53276814-submission-tugas-mandiri-4" id="ember1403" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Submission Tugas Mandiri 4
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li data-qa="content-item" class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-1414="1414">
+<a aria-current="false" href="https://www.kode.id/courses/take/Belajar-Langkah-Fundamental-Untuk-Menjadi-Web-Programmer/multimedia/53276819-nilai-tugas-mandiri" id="ember1415" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Nilai Tugas Mandiri 
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-multimedia _content-item__type-icon_nffvg8"></i>
+          Multimedia
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</div>
+</div>
+
+
+</div>
+
+        <!---->
+      </nav>
+
+      <main id="main-content" tabindex="-1" class="course-player__lesson _course-player__lesson_n1vbpj">
+<section class="surface__container _surface__container_1yatsw _surface--content_1yatsw">
+            <div class="content-surface _content-surface_n1vbpj">
+              <div class="course-player__content-header _content-header__container_h7ytgy">
+  <div class="_content-header__title-container_h7ytgy">
+        <h3 class="course-player__content-header__title _content-header__title_h7ytgy">Tugas Mandiri Sesi 4
+<!---->        </h3>
+  </div>
+  <div class="course-player__content-header__actions _content-header__actions_h7ytgy">
+<!----><!---->
+    <button class="course-player__content-header__action-fullscreen _content-header__action-fullscreen_h7ytgy" data-ember-action="" data-ember-action-1431="1431">
+        <span class="sr-only">Enable fullscreen</span>
+        <i aria-hidden="true" class="toga-icon toga-icon-arrow-grow"></i>
+    </button>
+  </div>
+</div>
+
+
+            <div class="content-modal-wrapper _content-modal-wrapper_n1vbpj">
+              <div class="content-modal _content-modal_n1vbpj">
+<!---->
+<!---->
+                <section id="content-inner" tabindex="-1" class="course-player__content-inner _content-inner_n1vbpj">
+<!---->
+                  
+                  <div id="ember2824" class="ember-view"><!----></div>
+
+<!--
+  Built with Mozilla PDF Viewer (PDF.js) in order
+  to control the available toolbar options
+  https://mozilla.github.io/pdf.js/
+-->
+<iframe src="./Tugas Mandiri Sesi 4_files/viewer.html" frameborder="0" class="_container_gl275m">
+</iframe>
+
+                </section>
+                  <footer id="course-player-footer" data-navigation="content" class="course-player__content-navigation _content-navigation_apmbd3 _no-audio_apmbd3">
+<!---->
+          <div class="btn--incomplete _btn--incomplete_apmbd3">
+  <button class="brand-color__border-60-opacity _button--ghost--small_142a8m" data-ember-action="" data-ember-action-2826="2826">
+    <div class="_content__wrapper_142a8m">
+<!---->  <div class="_content__container_142a8m">
+                  <span>Tandai Sebagai Incomplete</span>
+
+  </div>
+</div>
+
+  </button>
+          </div>
+
+      <div class="btn--continue _btn--continue_apmbd3">
+  <button class="brand-color__background brand-color__dynamic-text _button--default--small_142a8m _button--icon-right--small_142a8m" data-ember-action="" data-ember-action-2832="2832">
+    <div class="_content__wrapper_142a8m">
+<!---->  <div class="_content__container_142a8m">
+              <span>Lanjutkan</span>
+          <i aria-hidden="true" class="toga-icon toga-icon-arrow-right"></i>
+
+  </div>
+</div>
+
+  </button>
+      </div>
+</footer>
+<!---->
+              </div>
+            </div>
+          </div>
+
+</section>
+      </main>
+
+      <aside aria-label="Discussions" class="course-player__right-drawer _right-drawer_n1vbpj">
+        <div class="course-player__course-discussions _course-discussions_n1vbpj">
+          <!---->
+        </div>
+      </aside>
+
+    </div>
+<!---->  </div>
+
+  <!---->
+<!---->
+<!---->  <div id="ember473" class="ember-notify-cn ember-notify-default ember-view"><!----></div>
+</div>
+</div></div>
+<div id="push"></div>
+</div>
+<script src="./Tugas Mandiri Sesi 4_files/vendor-ed5462f20c50cc94c351a7ebd7fe1d6a.js.download"></script>
+<script src="./Tugas Mandiri Sesi 4_files/course-player-v2-4f15ea8be3e65cb39195c4a6d71c2642.js.download"></script>
+<script src="./Tugas Mandiri Sesi 4_files/kobayashi-3d7e9cbf4d1b19cc8a73472971d0892df6c4a0c1f9a610fd1e1299d2bea54584.js.download"></script>
+<script src="./Tugas Mandiri Sesi 4_files/moment.min.js.download"></script>
+<script src="./Tugas Mandiri Sesi 4_files/jquery-ui.min.js.download"></script>
+<script src="./Tugas Mandiri Sesi 4_files/filestack.min.js.download"></script>
+<script>
+  $(function() {
+    var clientOptions = {
+      security: {
+          policy: 'eyJjYWxsIjpbInBpY2siLCJzdG9yZSIsInJlYWQiLCJjb252ZXJ0Iiwid3JpdGUiLCJzdGF0IiwicmVtb3ZlIl0sImV4cGlyeSI6MTcxNDM2MzkzNywicGF0aCI6Il4yMzYwMzUvKGNvbW11bml0aWVzfGNvdXJzZXMpLyhbMC05XSspL3VzZXJzLzE5NzgxMjE4Mi8ifQ==',
+          signature: '5a339fc013154d461e5a68766d8025ec372e27d15ac6d3dc352511ccaab4acbd'
+      }
+    }
+    window.filestack = filestack.init('AJlfu1IB1Q9mpicgMdkVzz',clientOptions)
+  });
+</script>
+
+
+<script>
+  var userId = 197812182;
+  var email = 'apridhatullaili@gmail.com';
+  var mixpanelPerson = {
+    $email: email,
+    $created: '2024-04-19 13:38:18 +0000',
+    $last_login: '2024-04-28 13:34:06 +0000',
+    $first_name: 'Apridhatul',
+    $last_name: 'Laili',
+    'sign_in_count': 25,
+    'admin': false,
+    'referral_code': '',
+    'tenant': 'KODE by Hacktiv8',
+    'subdomain': 'hacktiv8-ptp',
+    'Is Paying': 'false',
+    'Revenue': '0.0',
+    'Courses': ["Belajar Langkah Fundamental Untuk Menjadi Web Programmer"]
+  };
+  var personTraits = {
+    'email': email,
+    'createdAt': '2024-04-19T13:38:18+00:00',
+    'firstName': 'Apridhatul',
+    'lastName': 'Laili',
+    'name': 'Apridhatul Laili'
+  };
+  var userInfo = {
+    'user_id': '197812182',
+    'tenant_id': '236035',
+    'email': email
+  }
+  ThinkificAnalytics.identify_for_tenant(userInfo, mixpanelPerson, personTraits);
+  ThinkificAnalytics.name_tag(email);
+</script>
+
+
+<div class="site-footer-code">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WB6RC86');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB6RC86"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</div>
+
+<div class="site-scripts" data-qa="footer-site-scripts">
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","325782605039499");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=325782605039499&amp;ev=PageView&amp;noscript=1"></noscript>
+</body></html>
